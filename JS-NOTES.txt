@@ -1,0 +1,139 @@
+				
+						JAVASCRIPT:
+
+ARRAYS:
+	PUSH -> WILL ADD AN ELEMENT TO THE END OF THE LIST (ARRAYNAME.PUSH(NUMBER))
+	POP  -> WILL REMOVE AN ELEMENT FROM THE END OF THE LIST (ARRAYNAME.POP())
+	SHIFT->	WILL ADD AN ELEMENT TO THE START OF THE LIST (ARRAYNAME.SHIFT(NUMBER))
+	UNSHIFT -> WILL REMOVE AN ELEMENT FROM THE START OF THE LIST (ARRAYNAME.UNSHIFT)
+
+OBJECTS:
+	TO CREATE AN OBJECT OF PERSON:
+		var person = {
+			name: "Rhea",
+			age: 21,
+			hobbies: ["music","exercising","series"],
+			greet: function(){
+				console.log("Hi Rhea");
+				}
+			}
+
+	TO ACCESS THE ITEMS:
+		person.name = gives Rhea
+		person.age = gives 21
+		person.hobbies = returns all hobbies
+		person.hobbies[index] = returns the hobby at that index
+		person.greet() = returns HI Rhea
+
+
+ADD EVENT LISTENER:
+	
+	IT IS AN ALTERNATIVE TO ONCLICK().
+	Ex:
+		var myBox = document.getElementById("box");
+		myBox.addEventListener("click", function(){
+    		console.log("I want to open the box!");
+		})
+
+19 yet to be done
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: absolute;
+  width: 30%;
+}
+.container2{
+	position: relative;
+	margin-left: 200px;
+    width: 30%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+.container2:hover .overlay2 {
+  height: 100%;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Bottom</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+  
+</div>
+
+<div class="container2">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay2">
+    <div class="text2">Hello World</div>
+  </div>
+  
+</div>
+
+</body>
+</html>

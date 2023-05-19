@@ -1,0 +1,43 @@
+len(string) -> length of string
+string.count('p') -> gives count of p
+reverse a string: string[::-1]
+[start_index: stop_index: step]
+string.find('p') -> gives index of the letter p
+string.replace('first','second') -> replaces first with 2nd
+round(num,num_of_decimal_places) -> gives a rounded number upto the given number of decimal num_of_decimal_places
+
+LISTS:
+-------
+list_name.index(word) -> gives index of the word
+list_name.sort() -> will sort the list in ascending order
+list_name.sort(reverse=True) -> will sort list in descending order
+EX: nums = [1,2,3]
+min(nums) -> returns 1
+max(nums) -> returns 3
+sum(nums) -> returns 6
+list_name.append(value) -> adds item to the list
+list_name.insert(index,value) -> inserts element to the specified position
+list1 = [1,2,3]
+list2=[a,b,c]
+list1.extend(list2)
+op: [1,2,3,a,b,c]
+list_name.remove(value) -> removes that value from the list
+pop() -> will remove last element of the array
+you can also pass an index to pop: pop(3) -> will remove item at index 3
+list_name.clear() -> will give you an empty list
+del list_name -> will delete the existence of the list
+new_list = old_list.copy() -> this will copy old list in new list
+-----------------------------------------
+SPLIT:
+-----
+msg = "hi how are you"
+
+print(msg.split(''))
+op: ["hi","how","are","you"]
+msg.replace(" ","") -> replaces the spaces with empty strings
+---------------------------
+tuples: lists that are immutable
+sets: unordered and they also remove any duplicates inside it
+
+--------------------------------------------
+intersection,difference,union -> some methods used with sets

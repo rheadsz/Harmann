@@ -1,0 +1,33 @@
+
+Primary key vs unique key
+->table can have only 1 PK, but can have more than 1 unique key
+->PK must not be null, UK can be null
+->UK is used to avoid of dupliacte values in a table 
+EX: custID: PK, AAdhar number: unique key (a cust may not have an aadhar)
+
+super key: candidate key U other attributes
+Super key is a single key or a group of multiple keys that can uniquely 
+identify tuples in a table. Super Key can contain multiple attributes 
+that might not be able to identify tuples in a table independently,
+but when grouped with certain keys, they can identify tuples uniquely.
+
+A candidate key SQL is a column or a set of columns that can qualify 
+as a primary key in the database. There can be multiple SQL candidate 
+keys in a database relation and each candidate can work as a primary key 
+for the table.
+
+if a set has n elements, we can have 2^n-1 subsets
+
+Integrity constraints:
+1)Entity integrity: constraint on the primary key
+-> shldnt be null
+-> shld be unique
+-> every table must have  a PK
+2)Domain integrity: a column/attrobute must have values from a specified
+range (gives the columns a valid value)
+3)user defined integrity: puts a constraint on the value in a col
+ex: amazon will keep a constraint that a customer can purchase only
+a certain number of items 
+4)Referential integrity:
+
+
